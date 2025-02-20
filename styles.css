@@ -19,4 +19,10 @@
     border-radius: 10px;
     border: 1px solid palevioletred;
     box-shadow: 0 2px rgb(141, 62, 88);
+    background-color: rgb(255, 255, 255);
 }
+.row button:hover {
+    background-color: rgb(204, 154, 163);
+    color: white;
+}
+
