@@ -25,4 +25,7 @@
     background-color: rgb(204, 154, 163);
     color: white;
 }
-
+.row button:active {
+    box-shadow: 0 1px rgb(141, 62, 88);
+    transform: translateY(1px);
+}
