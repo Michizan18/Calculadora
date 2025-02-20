@@ -3,5 +3,12 @@
     background-color: pink;
     width: 200px;
     border-radius: 10px;
-    box-shadow: 0 5px rgb(30, 103, 104);
+    box-shadow: 0 5px rgb(231, 83, 154);
+}
+
+.calculadora .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 5px 0 0;
 }
