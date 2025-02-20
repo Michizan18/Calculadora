@@ -12,3 +12,11 @@
     justify-content: space-between;
     margin: 5px 5px 0 0;
 }
+
+.row button {
+    flex: 1;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid palevioletred;
+    box-shadow: 0 2px rgb(141, 62, 88);
+}
