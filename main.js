@@ -21,3 +21,58 @@ var valorAnterior = 0;
 var operacion = "";
 var operaciones = ["+", "-", "x", "÷"];
 
+const botones = document.querySelectorAll("button")
+botones.forEach(boton => {
+    boton.addEventListener("click", (event)=>{
+        const valor = event.target.innerText;
+        let texto = document.querySelector("#screen").value;
+
+        switch (valor) {
+            case "AC":
+                document.querySelector("#screen").value = "0";
+            break;
+            case "+/-":
+                document.querySelector("#screen").value = cambiarSigno(texto);
+            break;
+            case "%":
+                document.querySelector("#screen").value = porciento(texto);
+            break;
+            case ".":
+              if(texto.indexOf(valor) == -1){
+                texto = texto + valor;
+                document.querySelector("#screen").value = texto;
+              }  
+            break;
+            case "=":
+                switch (operacion) {
+                    case "+":
+                        document.querySelector("#screen").value = sumar(valorAnterior, parseFloat(texto))
+                    break;
+                    case "-":
+                        document.querySelector("#screen").value = restar(valorAnterior, parseFloat(texto))
+                    break;
+                    case "x":
+                        document.querySelector("#screen").value = multiplicar(valorAnterior, parseFloat(texto))
+                    break;
+                    case "÷":
+                        document.querySelector("#screen").value = dividir(valorAnterior, parseFloat(texto))
+                    break;
+                }
+            break;
+            default:
+                 if(operaciones.find((e)=> e == valor)){
+                    valorAnterior = parseFloat(texto)
+                    operacion = valor
+                    document.querySelector("#screen").value = "0";
+                 }else{
+                    if(texto != "0") {
+                        texto = texto + valor;
+                    }else{
+                        texto = valor;
+                    }
+                    document.querySelector("#screen").value = texto;
+                }
+            break;
+        }
+    })
+});
