@@ -16,3 +16,8 @@ function porciento (a){
 function cambiarSigno(a){
     return -a;
 }
+
+var valorAnterior = 0;
+var operacion = "";
+var operaciones = ["+", "-", "x", "÷"];
+
