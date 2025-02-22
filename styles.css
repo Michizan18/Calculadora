@@ -4,6 +4,7 @@
     width: 200px;
     border-radius: 10px;
     box-shadow: 0 5px rgb(231, 83, 154);
+    margin: auto;
 }
 
 .calculadora .row {
