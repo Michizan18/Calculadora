@@ -26,6 +26,7 @@ body {
     border: 1px solid palevioletred;
     box-shadow: 0 2px rgb(141, 62, 88);
     background-color: rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .row button:hover {
     background-color: rgb(204, 154, 163);
