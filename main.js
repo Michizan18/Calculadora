@@ -17,9 +17,9 @@ function cambiarSigno(a){
     return -a;
 }
 
-var valorAnterior = 0;
-var operacion = "";
-var operaciones = ["+", "-", "x", "÷"];
+let valorAnterior = 0;
+let operacion = "";
+let operaciones = ["+", "-", "x", "÷"];
 
 const botones = document.querySelectorAll("button")
 botones.forEach(boton => {
